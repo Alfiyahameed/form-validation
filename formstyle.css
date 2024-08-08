@@ -1,0 +1,66 @@
+
+*{
+  margin: 0%; 
+  padding: 0%;
+  box-sizing: border-box; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background-image: url('tree.jpg'); 
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+.container{
+    backdrop-filter: blur(10px);
+    width: 400px;
+    padding: 30px 30px;
+    border-radius: 10px;
+} 
+.userlog{ 
+    width: 100%;
+     margin: 15px;
+     position: relative;
+     right:14px ;   
+}
+
+.userlog input{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: aliceblue;
+}
+
+.userlog input::placeholder{
+    color: white;
+}
+
+.userlog .error{
+    color: rgb(243, 17, 17);
+    font-size: 16px;
+} 
+
+.formstyle .but{
+   padding: 3px ;
+   border: 2px solid rgb(67, 207, 67);
+   border-radius: 10px;
+   background-color: rgb(67, 207, 67);
+   color: aliceblue;
+   width: 100%;
+}
+
+.userlog.success input{
+     border-color: rgb(48, 208, 48);
+}
+
+.userlog.fail input{
+    border-color: red;
+}
